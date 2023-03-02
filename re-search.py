@@ -1,22 +1,22 @@
 import re
 
 text = "The match in Germany"
-found = re.search('^the.*germany', text, re.IGNORECASE)
+match = re.search('^the.*germany', text, re.IGNORECASE)
 
-if found:
+if match:
     print("yes, we have a match")
-    print(f'{type(found)=}')
-    print(f'{found=}')
-    print(f'{found.group()=}')
-    print(f'{found.start()=}')
-    print(f'{found.end()=}')
-    print(f'{found.groupdict()=}')
-    print(f'{found.pos=}')
-    print(f'{found.endpos=}')
-    print(f'{found.re=}')
-    print(f'{found.lastgroup=}')
-    print(f'{found.lastindex=}')
-    print(f'{found.lastindex=}')
-    print(f'{found.string=}')
+    print(f'{type(match)=}')
+    print(f'{match=}')
+    print(f'{match.group()=}')
+    print(f'{match.start()=}')
+    print(f'{match.end()=}')
+    print(f'{match.groupdict()=}')
+    print(f'{match.pos=}')
+    print(f'{match.endpos=}')
+    print(f'{match.re=}')
+    print(f'{match.lastgroup=}')
+    print(f'{match.lastindex=}')
+    print(f'{match.lastindex=}')
+    print(f'{match.string=}')
 else:
     print('no match')
