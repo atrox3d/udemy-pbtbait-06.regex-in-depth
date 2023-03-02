@@ -1,10 +1,12 @@
 import re
 
 text = 'Python is a cross-platform programming language'
-pattern = r'\b' \
-          r'P' \
-          r'\w' \
-          r'+'
+# matches any word starting or ending with P
+pattern = (
+            r'\b'   # matches pattern at start or end of word
+            r'P'    # matches P at start or end of word
+            r'\w+'  # matches any character in a-z, A-Z, 0-9, including _ (underscore)
+)
 print(f'{pattern=}')
 match = re.search(pattern, text)
 
