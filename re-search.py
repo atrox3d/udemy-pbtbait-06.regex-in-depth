@@ -5,6 +5,7 @@ found = re.search('^the.*germany', text, re.IGNORECASE)
 
 if found:
     print("yes, we have a match")
+    print(f'{type(found)=}')
     print(f'{found=}')
     print(f'{found.group()=}')
     print(f'{found.start()=}')
