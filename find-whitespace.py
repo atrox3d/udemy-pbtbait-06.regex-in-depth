@@ -2,7 +2,7 @@ import re
 
 text = 'The rain in Germany'
 
-# find the first space in the string, returns re.Match
+# find the first space in the string, returns re.Match or None
 match = re.search(r'\s', text)
 
 if match:

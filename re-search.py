@@ -1,7 +1,7 @@
 import re
 
 text = "The match in Germany"
-match = re.search('^the.*germany', text, re.IGNORECASE)     # returns a re.Match object
+match = re.search('^the.*germany', text, re.IGNORECASE)     # returns a re.Match object or None
 
 if match:
     print("yes, we have a match")
